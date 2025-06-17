@@ -115,6 +115,8 @@ jobs:
 
       - name: Get project dependencies
         run: go mod download
+      - name: Tidy go.sum
+        run: go mod tidy
 
 
       - name: Build XrayR
